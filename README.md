@@ -53,7 +53,7 @@ $bridge = $this->bridgeFactory->create($bazaar);
 $response = $bridge->processRequest($request);
 
 if(!$response->isOk()) {
-	throw new BadResponseException('errro');
+	throw new BadResponseException('error');
 }
 
 $list = $response->getList());
