@@ -14,7 +14,7 @@ koncovy suborov:
 - *Criteria.php - je v podstate QueryObject pre entitu
 
 ukazka pouzitia QueryObjektu:
-````
+````php
 $criteria = (new Bazaar\AssetCriteria())
 	->type($assetType)
 	->bazaar($bazaar)
@@ -33,7 +33,7 @@ Kazdy request ma aj svoj vlastny response objekt cize pri volani API je zrejme z
 
 pouzitie:
 
-```
+```php
 // prepare QueryObject
 $adCriteria = (new AdCriteria())
 	->status(Ad::STATUS_FINISHED)
